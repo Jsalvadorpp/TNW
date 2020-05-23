@@ -60,16 +60,15 @@ body{
 /** Main articles */
 .main-articles{
     display: grid;
-    grid-template-areas: "main-item sub-item1"
-                         "main-item sub-item2";
-    padding: 10px 15px;
-    background-color: gold;
-    
-    gap: 10px 20px;
+    grid-template-areas: "main-item  main-item sub-item1"
+                         "main-item  main-item sub-item2";
+    padding: 5px;
+    gap: 10px;
+    height: 60vh;
 }
 .main-articles article{
-    padding: 10px 10px;
     background-color: hotpink;
+    position: relative;
 }
 .main-articles article:first-child{
     grid-area: main-item;
@@ -79,6 +78,44 @@ body{
 }
 .main-articles article:nth-child(3){
     grid-area: sub-item2;
+}
+.main-articles .background-img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    position: absolute;
+}
+.main-articles .background-img:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(108,89,89);
+    background: linear-gradient(180deg, rgba(108,89,89,0.4710083862646621) 0%, rgba(27,25,25,0.913585417076987) 81%);
+}
+.main-articles .article-txt{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+.article-txt h1{
+    font-size: 3em;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.main-articles article:nth-child(2) h1,
+.main-articles article:nth-child(3) h1{
+    font-size: 1.5em;
+}
+.main-articles article:nth-child(2) h4,
+.main-articles article:nth-child(3) h4{
+    font-size: 0.8em;
+}
+.article-txt small{
+    color: #bcbcbc;
 }
 /* *************** */
 
@@ -120,7 +157,4 @@ footer{
     margin-right: 15px;
     font-size: 14px;
 }
-
-
-
 /* ********* */
