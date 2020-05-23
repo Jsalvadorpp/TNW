@@ -92,8 +92,8 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgb(108,89,89);
-    background: linear-gradient(180deg, rgba(108,89,89,0.4710083862646621) 0%, rgba(27,25,25,0.913585417076987) 81%);
+    background: rgb(156,140,140);
+    background: linear-gradient(180deg, rgba(156,140,140,0.24411762996214115) 0%, rgba(79,73,73,0.49901959074645486) 12%, rgba(27,25,25,0.882773092147015) 68%);
 }
 .main-articles .article-txt{
     color: white;
@@ -120,6 +120,26 @@ body{
 /* *************** */
 
 
+/** Lastest News */
+.lastest-news{
+    padding: 10px 80px;
+    color: #ff4422;
+}
+.news-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px 20px;
+    color: black;
+    margin-top: 20px;
+    
+}
+.new img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2px;
+    height: 140px;
+}
+/* *************** */
 
 
 /** Footer */
