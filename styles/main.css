@@ -142,6 +142,61 @@ body{
 /* *************** */
 
 
+/** Funding section */
+.funding-section{
+    padding: 10px 80px;
+    color: #ff4422;
+}
+.funding-section .row{
+    display: flex;
+    justify-content: space-between;
+}
+.funding-section .right{
+    align-items: center;
+}
+.funding-link{
+    padding: 0 10px;
+    border-right: 1px solid #ff4422;
+}
+.funding-section .funding-link:last-child{
+    padding-right: 0;
+    border-right: none;
+}
+.funding-box-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    margin: 20px 0;
+}
+.funding-box{
+    position: relative;
+    display: grid;
+}
+.funding-box img{
+    position: absolute;
+    width: 60px;
+    object-fit: cover;
+    align-self: center;
+    left: 10px;
+}
+.funding-box .upper-txt{
+    background-color: #ff4422;
+    color: white;
+    padding: 10px 20px;
+    padding-left: 80px;
+}
+.funding-box .bottom-txt{
+    background-color: #ffebe7;
+    color: black;
+    padding: 10px 20px;
+    padding-left: 80px;
+}
+.funding-box .bottom-txt h5{
+    color: #878489;
+}
+/* *************** */
+
+
 /** Footer */
 footer{
     align-self: end;
