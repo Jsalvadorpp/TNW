@@ -53,7 +53,7 @@ body{
 .navbar-notice{
     background-color: #ffdd33;
     padding: 8px 20px;
-    font-size: 14px;
+    font-size: 0.8em;
 }
 .sticky-navbar{
     position: sticky;
@@ -272,6 +272,7 @@ footer{
     color: #9f9f9f;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .social-links,
 .footer-links{
